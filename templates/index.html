@@ -1,0 +1,22 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="/static/style.css">
+
+    <title>
+        {{ title }} - My Order List </title>
+</head>
+
+<body>
+    <h1> My Order List </h1>
+    {% for order in orders %}
+    <div>
+        <p>
+            {{ order.customer_name }}: <b> {{ order.book_title }} </b>
+        </p>
+    </div>
+    {% endfor %}
+</body>
+
+
+</html>
